@@ -1,0 +1,7 @@
+<!-- Reflected XSS örneği -->
+<form method="GET" action="">
+    <input type="text" name="q">
+    <input type="submit" value="Ara">
+</form>
+
+<p>Sonuç: <script>document.write(location.href)</script></p>
